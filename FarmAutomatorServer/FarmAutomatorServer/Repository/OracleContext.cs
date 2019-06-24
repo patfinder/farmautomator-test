@@ -13,7 +13,7 @@ namespace FarmAutomatorServer.Repository
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseOracle(@"User Id=Scott;Password=tiger;Data Source=Ora;");
+            optionsBuilder.UseOracle(@"User Id=farmdb;Password=123456;Data Source=XE;");
         }
     }
 }
