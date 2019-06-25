@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmAutomatorServer", "Farm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecureWebApiWithCookies", "..\SecureWebApiCookiesExample\SecureWebApiWithCookies\SecureWebApiWithCookies.csproj", "{C5FE0268-3D75-4877-992D-FBE36A92A434}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizardCMS", "..\..\mbs\WizardCMS\WizardCMS.csproj", "{4D4E9F51-A3DC-4999-A02A-9F314785987D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,14 +31,6 @@ Global
 		{C5FE0268-3D75-4877-992D-FBE36A92A434}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C5FE0268-3D75-4877-992D-FBE36A92A434}.Release|x86.ActiveCfg = Release|Any CPU
 		{C5FE0268-3D75-4877-992D-FBE36A92A434}.Release|x86.Build.0 = Release|Any CPU
-		{4D4E9F51-A3DC-4999-A02A-9F314785987D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D4E9F51-A3DC-4999-A02A-9F314785987D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D4E9F51-A3DC-4999-A02A-9F314785987D}.Debug|x86.ActiveCfg = Debug|x86
-		{4D4E9F51-A3DC-4999-A02A-9F314785987D}.Debug|x86.Build.0 = Debug|x86
-		{4D4E9F51-A3DC-4999-A02A-9F314785987D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D4E9F51-A3DC-4999-A02A-9F314785987D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D4E9F51-A3DC-4999-A02A-9F314785987D}.Release|x86.ActiveCfg = Release|x86
-		{4D4E9F51-A3DC-4999-A02A-9F314785987D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

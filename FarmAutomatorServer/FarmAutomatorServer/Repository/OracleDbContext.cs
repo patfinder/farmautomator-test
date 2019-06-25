@@ -4,12 +4,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace FarmAutomatorServer.Repository
 {
-    public class OracleContext : DbContext
+    public class OracleDbContext : DbContext // IdentityDbContext
     {
         public DbSet<User> Users { get; set; }
+
+        public OracleDbContext()
+        {
+
+        }
+
+        public OracleDbContext(DbContextOptions<OracleDbContext> options)
+            : base(options)
+        {
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
