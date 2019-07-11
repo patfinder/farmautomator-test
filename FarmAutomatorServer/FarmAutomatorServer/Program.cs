@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+//using Microsoft.EntityFrameworkCore.OracleDbContextOptionsExtensions;
 
 namespace FarmAutomatorServer
 {
@@ -17,8 +18,18 @@ namespace FarmAutomatorServer
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args){
+
+            var builder = WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
+
+            //Microsoft.EntityFrameworkCore.OracleDbContextOptionsExtensions.UseOracle(builder, "");
+
+            //return builder.useora
+            //    .UseOracle(@"User Id=blog;Password=<password>;Data Source=pdborcl;");
+            //    .UseStartup<Startup>();
+
+            return builder;
+        }
     }
 }

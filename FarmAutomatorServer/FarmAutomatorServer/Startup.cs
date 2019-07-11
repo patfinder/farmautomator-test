@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
+using FarmAutomatorServer.Repository;
 
 namespace FarmAutomatorServer
 {
@@ -27,6 +29,13 @@ namespace FarmAutomatorServer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<OracleDbContext>(options =>
+            //options.UseSqlite(
+            //    Configuration.GetConnectionString("DefaultConnection")));
+                options.UseOracle(
+                    //Configuration.GetConnectionString(@"User Id=blog;Password=<password>;Data Source=pdborcl;")));
+                    Configuration.GetConnectionString(@"User Id=farmdb;Password=123456;Data Source=localhost:1521/xe;")));
+
             services.AddCors();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
