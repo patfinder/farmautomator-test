@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmAutomatorServer", "FarmAutomatorServer\FarmAutomatorServer.csproj", "{DE3D6566-3F39-4F3C-AE79-476A35775DDD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecureWebApiWithCookies", "..\SecureWebApiCookiesExample\SecureWebApiWithCookies\SecureWebApiWithCookies.csproj", "{C5FE0268-3D75-4877-992D-FBE36A92A434}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cookies", "..\Cookies\Cookies.csproj", "{F3CA6854-AF25-4CC4-993A-7C406C516815}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecureWebApiWithCookies", "..\SecureWebApiCookiesExample\SecureWebApiWithCookies\SecureWebApiWithCookies.csproj", "{BA98C703-9735-49C7-90A8-560208AF26DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,14 @@ Global
 		{DE3D6566-3F39-4F3C-AE79-476A35775DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE3D6566-3F39-4F3C-AE79-476A35775DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE3D6566-3F39-4F3C-AE79-476A35775DDD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5FE0268-3D75-4877-992D-FBE36A92A434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5FE0268-3D75-4877-992D-FBE36A92A434}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5FE0268-3D75-4877-992D-FBE36A92A434}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5FE0268-3D75-4877-992D-FBE36A92A434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3CA6854-AF25-4CC4-993A-7C406C516815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CA6854-AF25-4CC4-993A-7C406C516815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CA6854-AF25-4CC4-993A-7C406C516815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CA6854-AF25-4CC4-993A-7C406C516815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA98C703-9735-49C7-90A8-560208AF26DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA98C703-9735-49C7-90A8-560208AF26DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA98C703-9735-49C7-90A8-560208AF26DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA98C703-9735-49C7-90A8-560208AF26DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
