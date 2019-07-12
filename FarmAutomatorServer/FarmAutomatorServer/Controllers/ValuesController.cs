@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using FarmAutomatorServer.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace FarmAutomatorServer.Controllers
 {
@@ -14,6 +17,13 @@ namespace FarmAutomatorServer.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            // TESTING
+            var dbContext = new OracleDbContext();
+            //dbContext.Database.Log
+            var article = dbContext.Articles.FirstOrDefault();
+
+            Debug.WriteLine($"{nameof(ActionResult)}: article: ", JsonConvert.SerializeObject(article));
+
             return new string[] { "value1", "value2" };
         }
 

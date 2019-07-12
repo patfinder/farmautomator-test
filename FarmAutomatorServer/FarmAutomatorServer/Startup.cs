@@ -32,9 +32,9 @@ namespace FarmAutomatorServer
             services.AddDbContext<OracleDbContext>(options =>
             //options.UseSqlite(
             //    Configuration.GetConnectionString("DefaultConnection")));
-                options.UseOracle(
-                    //Configuration.GetConnectionString(@"User Id=blog;Password=<password>;Data Source=pdborcl;")));
-                    Configuration.GetConnectionString(@"User Id=farmdb;Password=123456;Data Source=localhost:1521/xe;")));
+            //    //Configuration.GetConnectionString(@"User Id=blog;Password=<password>;Data Source=pdborcl;")));
+            options.UseOracle(
+                Configuration.GetConnectionString(@"User Id=farmdb;Password=123456;Data Source=localhost:1521/xe;")));
 
             services.AddCors();
 

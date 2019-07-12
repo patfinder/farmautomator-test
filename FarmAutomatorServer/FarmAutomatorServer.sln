@@ -51,6 +51,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ignite-example-login", "..\
 		SlnRelativePath = "..\..\ignite-example-login\"
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{954F82B0-0265-4214-9463-F17D9B5216EE}"
+	ProjectSection(SolutionItems) = preProject
+		..\Oracle EF Code First Example.cs = ..\Oracle EF Code First Example.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
